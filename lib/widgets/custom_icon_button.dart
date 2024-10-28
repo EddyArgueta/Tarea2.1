@@ -4,13 +4,13 @@ import 'package:flutter/material.dart';
 class CustomListTile extends StatelessWidget {
   final IconData icon;
   final String title;
-  final String subtitle;
+  final IconData trailing;
 
   const CustomListTile({
     super.key,
     required this.icon,
     required this.title,
-    required this.subtitle,
+    required this.trailing,
   });
 
   @override
@@ -18,7 +18,7 @@ class CustomListTile extends StatelessWidget {
     return ListTile(
       leading: Icon(icon),
       title: Text(title),
-      subtitle: Text(subtitle),
+      trailing: Icon(trailing),
     );
   }
 }

@@ -10,30 +10,35 @@ class Principal extends StatelessWidget {
       body: ListView(
         children: const [
           CustomListTile(
-            icon: Icons.coffee,
-            title: 'Coffee',
-            subtitle: '100g',
+            icon: Icons.house_outlined,
+            title: 'My stores',
+            trailing: Icons.arrow_forward,
           ),
           CustomListTile(
-            icon: Icons.coffee,
-            title: 'Tea',
-            subtitle: '50g',
-          ),
-          CustomListTile(
-            icon: Icons.coffee,
-            title: 'Milk',
-            subtitle: '200ml',
+            icon: Icons.support,
+            title: 'Support',
+            trailing: Icons.arrow_forward
           ),
           Divider(),
           CustomListTile(
-            icon: Icons.coffee,
-            title: 'Sugar',
-            subtitle: '50g',
+            icon: Icons.notifications_none_outlined,
+            title: 'Push notifications',
+            trailing: Icons.arrow_forward,
           ),
           CustomListTile(
-            icon: Icons.coffee,
-            title: 'Honey',
-            subtitle: '100g',
+            icon: Icons.center_focus_weak_outlined,
+            title: 'Face ID',
+            trailing: Icons.arrow_forward,
+          ),
+          CustomListTile(
+            icon: Icons.pin_sharp,
+            title: 'PIN Code',
+            trailing: Icons.arrow_forward,
+          ),
+          CustomListTile(
+            icon: Icons.logout_outlined,
+            title: 'Logout',
+            trailing: Icons.arrow_forward,
           ),
         ],
       ),
