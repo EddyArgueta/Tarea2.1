@@ -29,13 +29,13 @@ class Inventories extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               CustomListTile(
-                icon: Icons.store,
+                icon: Icons.store_mall_directory_outlined,
                 title: 'My stores',
                 trailing: Icons.arrow_forward,
               ),
               Divider(),
               CustomListTile(
-                icon: Icons.support,
+                icon: Icons.support_outlined,
                 title: 'Support',
                 trailing: Icons.arrow_forward,
               ),

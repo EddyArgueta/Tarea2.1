@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:screendesign/widgets/custom_icon_button.dart';
+import 'package:screendesign/widgets/switch_button.dart';
 
 class Preferences extends StatelessWidget {
   const Preferences({super.key});
@@ -28,16 +29,14 @@ class Preferences extends StatelessWidget {
           child: const Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              CustomListTile(
+              CustomListTile2(
                 icon: Icons.notifications_none_outlined,
                 title: 'Push notifications',
-                trailing: Icons.arrow_forward,
               ),
               Divider(),
-              CustomListTile(
+              CustomListTile2(
                 icon: Icons.center_focus_weak_outlined,
                 title: 'Face ID',
-                trailing: Icons.arrow_forward,
               ),
               Divider(),
               CustomListTile(
