@@ -12,18 +12,18 @@ class Encabezado extends StatelessWidget {
         borderRadius: BorderRadius.circular(16.0),
       ),
       child: Container(
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.all(5),
         child: Column(
           children: [
             IconButton(
-              iconSize: 100,
+              iconSize: 80,
               icon: const Icon(
                 Icons.tag_faces_outlined,
                 color: Colors.blue,
               ),
               onPressed: () {},
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: 8),
             const Text(
               'Coffeestories',
               style: TextStyle(
@@ -38,10 +38,14 @@ class Encabezado extends StatelessWidget {
                 fontSize: 14,
               ),
             ),
-            const SizedBox(height: 24),
+            const SizedBox(height: 8),
             ElevatedButton(
               onPressed: () {},
-              child: const Text('Edit profile'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.black,
+                foregroundColor: Colors.white
+              ),
+              child: const Text('Edit profile', style: TextStyle(fontSize: 17),),
             ),
           ],
         ),

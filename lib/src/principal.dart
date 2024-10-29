@@ -13,12 +13,12 @@ class Principal extends StatelessWidget {
         toolbarHeight: 10,
       ),
       body: ListView(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(8.0),
         children: const [
           Encabezado(),
-          SizedBox(height: 24),
+          SizedBox(height: 8),
           Inventories(),
-          SizedBox(height: 24),
+          SizedBox(height: 8),
           Preferences(),
         ],
       ),

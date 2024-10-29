@@ -6,36 +6,43 @@ class Inventories extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(elevation: 1,
-      color: Colors.white,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(16.0),
-      ),
-      child: const Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Padding(
-            padding: EdgeInsets.all(16.0),
-            child: Text(
-              'Inventories',
-              style: TextStyle(
-                fontSize: 16,
-              ),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Padding(
+          padding: EdgeInsets.symmetric(horizontal: 16.0),
+          child: Text(
+            'Inventories',
+            style: TextStyle(
+              fontSize: 16,
             ),
           ),
-          CustomListTile(
-            icon: Icons.store,
-            title: 'My stores',
-            trailing: Icons.arrow_forward,
+        ),
+        const SizedBox(height: 8),
+        Card(
+          elevation: 1,
+          color: Colors.white,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16.0),
           ),
-          Divider(),
-          CustomListTile(
-            icon: Icons.support,
-            title: 'Support',
-            trailing: Icons.arrow_forward,
+          child: const Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              CustomListTile(
+                icon: Icons.store,
+                title: 'My stores',
+                trailing: Icons.arrow_forward,
+              ),
+              Divider(),
+              CustomListTile(
+                icon: Icons.support,
+                title: 'Support',
+                trailing: Icons.arrow_forward,
+              ),
+            ],
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
