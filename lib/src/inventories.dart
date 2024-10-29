@@ -14,14 +14,14 @@ class Inventories extends StatelessWidget {
           child: Text(
             'Inventories',
             style: TextStyle(
-              fontSize: 16,
+              fontSize: 14,
             ),
           ),
         ),
         const SizedBox(height: 8),
         Card(
           elevation: 1,
-          color: Colors.white,
+          color: const Color.fromARGB(255, 252, 247, 247),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16.0),
           ),
@@ -33,7 +33,7 @@ class Inventories extends StatelessWidget {
                 title: 'My stores',
                 trailing: Icons.arrow_forward,
               ),
-              Divider(),
+              Divider(indent: 16, endIndent: 16),
               CustomListTile(
                 icon: Icons.support_outlined,
                 title: 'Support',

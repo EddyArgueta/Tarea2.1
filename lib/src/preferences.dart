@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:screendesign/widgets/custom_icon_button.dart';
-import 'package:screendesign/widgets/switch_button.dart';
 
 class Preferences extends StatelessWidget {
   const Preferences({super.key});
@@ -15,14 +14,14 @@ class Preferences extends StatelessWidget {
           child: Text(
             'Preferences',
             style: TextStyle(
-              fontSize: 16,
+              fontSize: 14,
             ),
           ),
         ),
         const SizedBox(height: 8),
         Card(
           elevation: 1,
-          color: Colors.white,
+          color: const Color.fromARGB(255, 252, 247, 247),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16.0),
           ),
@@ -33,18 +32,18 @@ class Preferences extends StatelessWidget {
                 icon: Icons.notifications_none_outlined,
                 title: 'Push notifications',
               ),
-              Divider(),
+              Divider(indent: 16, endIndent: 16),
               CustomListTile2(
                 icon: Icons.center_focus_weak_outlined,
                 title: 'Face ID',
               ),
-              Divider(),
+              Divider(indent: 16, endIndent: 16),
               CustomListTile(
                 icon: Icons.dialpad_sharp,
                 title: 'PIN Code',
                 trailing: Icons.arrow_forward,
               ),
-              Divider(),
+              Divider(indent: 16, endIndent: 16),
               ListTile(
                 leading: Icon(Icons.logout_outlined),
                 title: Text('Logout'),
