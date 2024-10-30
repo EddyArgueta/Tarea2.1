@@ -21,8 +21,8 @@ class Encabezado extends StatelessWidget {
             const ClipOval(
               child: Image(
                  image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
-                 width: 100,
-                 height: 100,
+                 width: 90,
+                 height: 90,
                  fit: BoxFit.cover,
                ),
              ),
