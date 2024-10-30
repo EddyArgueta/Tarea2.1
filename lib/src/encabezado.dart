@@ -12,17 +12,20 @@ class Encabezado extends StatelessWidget {
         borderRadius: BorderRadius.circular(16.0),
       ),
       child: Container(
-        padding: const EdgeInsets.all(5),
+        padding: const EdgeInsets.all(24),
         child: Column(
-          children: [
-            IconButton(
-              iconSize: 80,
-              icon: const Icon(
-                Icons.tag_faces_outlined,
-                color: Colors.blue,
-              ),
-              onPressed: () {},
-            ),
+          children: [    
+            //ClipOval se utiliza para recortar cualquier widget dentro de una forma ovalada o circular. 
+            //Al usar este widget, puedes mantener la imagen dentro de una forma redonda sin importar el tamaño 
+            //original de la imagen.
+            const ClipOval(
+              child: Image(
+                 image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
+                 width: 100,
+                 height: 100,
+                 fit: BoxFit.cover,
+               ),
+             ),
             const SizedBox(height: 8),
             const Text(
               'Coffeestories',

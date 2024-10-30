@@ -20,10 +20,11 @@ class Preferences extends StatelessWidget {
         ),
         const SizedBox(height: 8),
         Card(
-          elevation: 1,
+          elevation: 0,
           color: const Color.fromARGB(255, 252, 247, 247),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16.0),
+            side: const BorderSide(color: Colors.grey, width: 1),
           ),
           child: const Column(
             crossAxisAlignment: CrossAxisAlignment.start,

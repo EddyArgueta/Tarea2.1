@@ -20,10 +20,11 @@ class Inventories extends StatelessWidget {
         ),
         const SizedBox(height: 8),
         Card(
-          elevation: 1,
+          elevation: 0,
           color: const Color.fromARGB(255, 252, 247, 247),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16.0),
+            side: const BorderSide(color: Colors.grey, width: 1),
           ),
           child: const Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -31,6 +32,7 @@ class Inventories extends StatelessWidget {
               CustomListTile(
                 icon: Icons.store_mall_directory_outlined,
                 title: 'My stores',
+                notification: 2,
                 trailing: Icons.arrow_forward,
               ),
               Divider(indent: 16, endIndent: 16),
