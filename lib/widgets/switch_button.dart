@@ -17,7 +17,7 @@ class _SwitchButtonState extends State<SwitchButton> {
       // This bool value toggles the switch.
       value: light,
       activeColor: Colors.white,
-      activeTrackColor: Colors.green,
+      activeTrackColor: Colors.green[700],
       onChanged: (bool value) {
         // This is called when the user toggles the switch.
         setState(() {

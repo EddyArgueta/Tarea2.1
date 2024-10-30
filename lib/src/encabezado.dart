@@ -12,7 +12,7 @@ class Encabezado extends StatelessWidget {
         borderRadius: BorderRadius.circular(16.0),
       ),
       child: Container(
-        padding: const EdgeInsets.all(24),
+        padding: const EdgeInsets.all(15),
         child: Column(
           children: [    
             //ClipOval se utiliza para recortar cualquier widget dentro de una forma ovalada o circular. 
@@ -26,29 +26,30 @@ class Encabezado extends StatelessWidget {
                  fit: BoxFit.cover,
                ),
              ),
-            const SizedBox(height: 8),
+            const SizedBox(height: 5),
             const Text(
               'Coffeestories',
               style: TextStyle(
                 fontSize: 30,
-                fontWeight: FontWeight.w600,
+                fontWeight: FontWeight.w500,
               ),
             ),
-            const SizedBox(height: 8),
-            const Text(
+            const SizedBox(height: 5),
+            Text(
               'mark.brock@icloud.com',
               style: TextStyle(
                 fontSize: 14,
+                color: Colors.grey[600],
               ),
             ),
-            const SizedBox(height: 8),
+            const SizedBox(height: 5),
             ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.black,
                 foregroundColor: Colors.white
               ),
-              child: const Text('Edit profile', style: TextStyle(fontSize: 17),),
+              child: const Text('Edit profile', style: TextStyle(fontSize: 17, fontWeight: FontWeight.w300),),
             ),
           ],
         ),

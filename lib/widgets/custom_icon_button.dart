@@ -33,8 +33,8 @@ class CustomListTile extends StatelessWidget {
           if (notification != null)
             Container(
               padding: const EdgeInsets.all(6),
-              decoration: const BoxDecoration(
-                color: Colors.green, // Color del círculo
+              decoration: BoxDecoration(
+                color: Colors.green[700], // Color del círculo
                 shape: BoxShape.circle,
               ),
               child: Text(
@@ -49,7 +49,8 @@ class CustomListTile extends StatelessWidget {
       ),
       trailing: Icon(
         trailing,
-        color: Colors.grey[600], // Para que se vean menos intensos
+        size: 20,
+        color: Colors.grey[500], // Para que se vean menos intensos
       ),
     );
   }
@@ -69,7 +70,10 @@ class CustomListTile2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: Icon(icon),
+      leading: Icon(
+        icon,
+        color: Colors.grey[600], // Para que se vean menos intensos
+      ),
       title: Text(title),
       trailing: const SwitchButton(),
     );

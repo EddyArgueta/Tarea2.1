@@ -18,7 +18,7 @@ class Preferences extends StatelessWidget {
             ),
           ),
         ),
-        const SizedBox(height: 8),
+        const SizedBox(height: 5),
         Card(
           elevation: 0,
           color: const Color.fromARGB(255, 252, 247, 247),
