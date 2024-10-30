@@ -9,12 +9,13 @@ class Preferences extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 16.0),
+          Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Text(
             'Preferences',
             style: TextStyle(
               fontSize: 14,
+              color: Colors.grey[600]
             ),
           ),
         ),
